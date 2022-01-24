@@ -26,7 +26,6 @@ class _SubjectsState extends State<Subjects> {
                 itemCount: Subjects_List.length,
                 itemBuilder: (context, index) {
                   return Container(
-
                     margin: const EdgeInsets.all(10.0),
                     padding: const EdgeInsets.all(10.0),
                     height: 60,
@@ -46,13 +45,15 @@ class _SubjectsState extends State<Subjects> {
                 }),
             SizedBox(height: 10),
             ElevatedButton(
-              child: Text('Add New Subject', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),  ),
+              child: Text(
+                'Add New Subject',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
               onPressed: () {},
               style: ElevatedButton.styleFrom(
                 primary: const Color.fromRGBO(0, 147, 74, 1),
                 minimumSize: Size(double.infinity, 60),
               ),
-
             ),
           ],
         ),

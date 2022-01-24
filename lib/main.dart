@@ -5,6 +5,8 @@ import './screen/Main_screen.dart';
 import './screen/BottomNavigation_screen.dart';
 import './screen/resetpwd_screen.dart';
 import './screen/Subjects.dart';
+import './screen/ParentsList.dart';
+import './screen/GradeLevels.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,11 +25,13 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Roboto-Regular'
 
       ),
-      home: Subjects(),
+      home: GradeLevels(),
       routes: {
         MainScreen.id :(context)=>MainScreen(),
         RespwdScreen.id : (context)=> const RespwdScreen(),
-        Subjects.id : (context)=> Subjects()
+        Subjects.id : (context)=> Subjects(),
+        ParentsList.id : (context)=> ParentsList(),
+        GradeLevels.id : (context)=> GradeLevels()
       },
     );
   }

@@ -232,19 +232,13 @@ class _ParentsListState extends State<ParentsList> {
                           Icon( Icons.edit_outlined,color: Colors.green,),
 
                           Switch(value: Swithvalue, onChanged: (Swithvalue){} , activeColor: Colors.green,)
-
                         ],
                       ),
-
                       decoration: BoxDecoration(
                           border: Border.all(width: 2,color: Colors.blue),
                           borderRadius: BorderRadius.all(Radius.circular(20))
-
                       ),
-
                     ),
-
-
                   ],
                 ),
               )
