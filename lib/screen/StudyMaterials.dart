@@ -10,6 +10,17 @@ class StudyMaterials extends StatefulWidget {
 class _StudyMaterialsState extends State<StudyMaterials> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('StudyMaterails'),
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+
+          ],
+        ),
+      ),
+    );
   }
 }
