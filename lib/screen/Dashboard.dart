@@ -4,11 +4,13 @@ import '../models/menu_list.dart';
 import '../screen/BottomNavigation_screen.dart';
 
 class Dashboard extends StatefulWidget {
+  static const String id = 'Dashboard';
   @override
   _DashboardState createState() => _DashboardState();
 }
 
 class _DashboardState extends State<Dashboard> {
+  final GlobalKey<ScaffoldState> ScafoldKey = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(

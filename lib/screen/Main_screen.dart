@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 import '../widgets/CircularWidget.dart';
 import '../widgets/CarouselWidget.dart';
 import '../widgets/line_chart_widget.dart';
+import '../screen/Dashboard.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 class MainScreen extends StatefulWidget {
@@ -151,7 +152,10 @@ class _MainScreenState extends State<MainScreen> {
                   CircularWidget(
                       imageurl: 'assets/images/dashboard.png',
                       label: 'Dashboard',
-                      onPress: () {}),
+                      onPress: () {
+                        print('dasbord');
+                        Navigator.pushReplacementNamed(context, Dashboard.id);
+                      }),
                   const SizedBox(
                     width: 10,
                   ),

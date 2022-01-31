@@ -14,7 +14,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
 
   int _selectedIndex = 0;
   static  List<Widget> _widgetOptions = <Widget>[
-   MainScreen(),
+   //MainScreen(),
   ];
 
   void _onItemTapped(int index) {
